@@ -1,0 +1,8 @@
+<p>
+Category:  <b><%= purchase.category_name %> </b>
+<%= purchase.price %> UAH
+<%= purchase.buy_at %> Date
+<%= link_to 'Edit ', edit_purchase_path(purchase) %> |
+<%= link_to "Delete ", purchase, data: { turbo_method: :delete} %>
+</p>
+
